@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en-in">        
+        <style>
+            form, h1, div, p{
+                font-family: Arial, Helvetica, sans-serif;
+            }        
+            </style>
+        <title>Quick PAN</title>
+    </head>
+    <body>
+        <div style="background-color: orange;"><br><hr></div>    
+        <div><a href="Index.html"><img src="LOGO.jpg" style="width: 30%; height: 30%; float: inline-start;"></a><a href="azadi ka amrit mahotsav.html"><img src="azadi ka amrit mahotsav.jpg" height="85px" width="400px" style="margin-left: 40%; float: inline-end;"></a></div>
+        <div style="background-color: green;"><br><hr></div>
+        <div style="background-color: lavender;">
+            <hr>
+            <a href="Signup page.html" target="_blank">Signup</a>
+            <a style="margin-left: 66%;" href="Index.html">Index</a>
+            <a style="margin-left: 1%;" href="About us.html" >About us</a>
+            <a style="margin-left: 1%;" href="contactus.html">Contact us</a>
+            <a style="margin-left: 1%;" href="Feedback.html" target="_blank">Feedback</a>
+            <a style="margin-left: 1%;" href="accessibility.html">Accessibility</a>
+            <hr>
+        </div>        
+    <h1 style="font-size: 300%; font-weight: bold;">PAN REGISTRATION FORM</h1>
+    <p>The charges for applying for PAN is Rs. 93 (Excluding Goods and Services tax​) for Indian communication address. Payment of application fee can be made through credit/debit card, demand draft or net-banking.</p>
+        <br><form style="font-size: 115%;" method="post" action="Payment.html">
+            First name*: <input type="text" required autofocus placeholder="Enter your first name" minlength="2"><br><br>
+            Middle name: <input type="text" placeholder="Enter your middle name"><br><br>
+            Last name: <input type="text" placeholder="Enter your last name"><br><br>
+            Mobile Number*: <input type="text" required placeholder="Enter your mobile number" minlength="10" maxlength="10"><br><br>
+            OTP*: <input type="text" required placeholder="Enter OTP" minlength="4" maxlength="6"><br><i style="color: red; font-size: 80%; font-family: Arial, Helvetica, sans-serif;">(Enter the OTP received on the registered mobile number)</i><br><br>
+            Aadhar/Pan Card*: <input type="text"required placeholder="Enter Aadhar/Pan Card number" minlength="12" maxlength="14"><br><br> 
+            Nationality:
+            <select>
+                <option>Indian</option>
+                <option>Other</option>
+            </select><br><br>
+            D.O.B.*: <input type="date"><br><br>
+            Email: <input type="email" placeholder="Enter your e-mail id" minlength="12"><br><br>
+            Password*: <input type="password" required autofocus placeholder="Create a Password" minlength="8" maxlength="20"><br><br>
+            Confirm Password*: <input type="password" required autofocus placeholder="Confirm Password" minlength="8" maxlength="20"><br><br>
+            Gender: <input type="radio" name="rbGender">Male
+            <input type="radio" name="rbGender">Female
+            <input type="radio" name="rbGender">Others<br><br>
+            <input type="checkbox" required>I hereby solemnly and honestly declare that all the details I have entered are correct best to that of my knowledge and if any of the details that I have provided turn out to be wrong then I am responsible for any legal or constitutional action taken against me by the concerned authorities.<br><br>
+            <input type="submit"><br><br>
+            <input type="reset">
+        </form>
+    </body>
+</html>

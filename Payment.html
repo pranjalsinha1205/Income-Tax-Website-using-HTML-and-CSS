@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en-in">
+        <title>Payment</title>
+        <style>
+            form, a{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .grid-item{
+                font-family: Arial, Helvetica, sans-serif;
+                border: 3px solid black; 
+                border-radius: 5%;
+                padding-top: 2%; padding-bottom: 3%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: orange;"><br><hr></div>    
+        <div><a href="Index.html"><img src="LOGO.jpg" style="width: 30%; height: 30%; float: inline-start;"></a><a href="azadi ka amrit mahotsav.html"><img src="azadi ka amrit mahotsav.jpg" height="85px" width="400px" style="margin-left: 40%; float: inline-end;"></a></div>
+        <div style="background-color: green;"><br><hr></div>
+        <div style="background-color: lavender;">
+            <hr>
+            <a href="Signup page.html" target="_blank">Signup</a>
+            <a style="margin-left: 66%;" href="Index.html">Index</a>
+            <a style="margin-left: 1%;" href="About us.html" >About us</a>
+            <a style="margin-left: 1%;" href="contactus.html">Contact us</a>
+            <a style="margin-left: 1%;" href="Feedback.html" target="_blank">Feedback</a>
+            <a style="margin-left: 1%;" href="accessibility.html">Accessibility</a>
+            <hr>
+        </div>
+    <div style="background-color: lightcyan;">
+        <br><br>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Pay the registration fees of Rs. 93/00 to successfully submit the form</h1><br><br>
+        <div class="grid-container">
+            <div class="grid-item" style="background-color: skyblue; width: 75%;">
+                <h1>Card</h1><hr>
+                <form method="post" action="PAN confirmation.html">
+                    Payment amount: Rs. 93/00 only<br><br>
+                    Credit/Debit Card Number: <input type="text" required placeholder="XXXX-XXXX-XXXX" minlength="12" maxlength="12"><br>
+                    <b style="color: red; font-size: 90%;">Enter your 12-digit credit/debit card number</b><br><br>
+                    Date of Expiry: <input type="month" required><br><br>
+                    CVV: <input type="number" required min="100" max="999"><br><br>
+                    <input type="submit"><br><br>
+                    <input type="reset"><br><br>
+                </form>
+            </div>
+            <div class="grid-item" style="background-color: skyblue;">
+                <h1>UPI</h1><hr>
+                <form method="post" action="UPI gateway.html">
+                    Payment amount: Rs. 93/00 only<br><br>
+                    UPI ID: <input type="text" required placeholder="Enter your UPI ID"><br><br>
+                    <input type="submit"><br><br>
+                    <input type="reset"><br><br></form>
+            </div>
+            <div class="grid-item" style="background-color: skyblue; margin-left: 30%;">
+                <h1>Netbanking</h1><hr>
+                <form method="post" action="Netbanking gateway.html">
+                    Payment amount: Rs. 93/00 only<br><br>
+                    Choose your bank:
+                    <select>
+                        <option>State Bank of India</option>
+                        <option>HDFC Bank</option>
+                        <option>Bank of India</option>
+                        <option>Punjab National Bank</option>
+                        <option>Bank of Baroda</option>
+                        <option>Kotak Mahindra</option>
+                        <option>ICICI</option>
+                        <option>Axis Bank</option>
+                    </select><br><br>
+                    Login ID: <input type="text" required placeholder="Enter your Login ID"><br><br>
+                    Password: <input type="password" required placeholder="Enter your password"><br><br>
+                    <input type="submit"><br><br>
+                    <input type="reset"><br><br></form>
+            </div>
+        </div>
+    </div><div style="background-color: yellow;"><hr><br></div>
+    </body>
+</html>

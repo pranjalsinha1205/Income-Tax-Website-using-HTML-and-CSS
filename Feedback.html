@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en-in">
+        <title>Feedback</title>
+        <style>
+            p, div, a, form, h3{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 2%;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-rows: auto auto;
+            }
+            .grid-item{
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: orange;"><br><hr></div>    
+        <div><a href="Index.html"><img src="LOGO.jpg" style="width: 30%; height: 30%; float: inline-start;"></a><a href="azadi ka amrit mahotsav.html"><img src="azadi ka amrit mahotsav.jpg" height="85px" width="400px" style="margin-left: 40%; float: inline-end;"></a></div>
+        <div style="background-color: green;"><br><hr></div>
+        <div style="background-color: lavender;">
+            <hr>
+            <a href="Signup page.html" target="_blank">Signup</a>
+            <a style="margin-left: 66%;" href="Index.html">Index</a>
+            <a style="margin-left: 1%;" href="About us.html" >About us</a>
+            <a style="margin-left: 1%;" href="contactus.html">Contact us</a>
+            <a style="margin-left: 1%;" href="Feedback.html">Feedback</a>
+            <a style="margin-left: 1%;" href="accessibility.html">Accessibility</a>
+            <hr>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+            <form method="post" action="Feedback confirmation.html">
+                <h3 style="color: blue;">Message type:</h3> <input type="radio" name="rbMessage" required style="color: black;">Grievance
+                    <input type="radio" name="rbMessage" style="color: black;">Request
+                    <input type="radio" name="rbMessage" style="color: black;">Enquiry
+                    <input type="radio" name="rbMessage" style="color: black;">Feedback
+                <p style="color: blue; font-weight: bold; font-size: 115%;">Category: 
+                <select>
+                    <option>General enquiry</option>
+                    <option>Report against corruption</option>
+                    <option>Complaint against employees</option>
+                    <option>Suggestions</option>                
+                </select></p>
+                <h3 style="color: blue;">PAN card number: <input type="text" required placeholder="Enter your PAN" minlength="12" maxlength="12"></h3>
+                <h3 style="color: blue;">Mobile number: <input type="text" required placeholder="Enter your mobile number" minlength="10" maxlength="10"></h3>
+            </div>
+            <div class="grid-item"><h3 style="color: blue">Description: </h3><textarea rows="7" cols="100" required placeholder="Description" style="font-family: Arial, Helvetica, sans-serif; font-size: 120%; max-lines: 7;"></textarea><br>
+                <br><input type="submit"><input type="reset">
+            </form></div>
+        </div>
+        <div style="background-color: yellow;"><hr><br></div>
+    </body>
+</html>
